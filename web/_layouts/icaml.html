@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="de-DE">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="de-DE">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="de-DE">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>{{ site.title }}</title>
+<!--[if lt IE 9]><!--[if IE 7]>
+<html class="ie ie7" lang="de-DE">
+<![endif]-->
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="de-DE">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="de-DE">
+<!--<![endif]-->
+<head>
+
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='{{site.url}}/css/style.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='{{site.url}}/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='{{site.url}}/js/jquery.js'></script>
+<script type='text/javascript' src='{{site.url}}/js/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='{{site.url}}/js/papercite.js'></script>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+<meta name="generator" content="Manual Editing after WordPress 4.4.2" />
+	<style type="text/css" id="twentytwelve-header-css">
+			.site-header h1 a,
+			.site-header h2 {
+			color: #000000;
+		}
+		</style>
+	</head>
+
+<script language="JavaScript">
+function initialize()
+{
+	var items = document.getElementsByTagName("pre");
+	for (var i = items.length; i--;) {
+		items[i].className += ' prettyprint';
+	}
+}
+  function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  }
+
+</script>
+
+<!--
+used in <h1 site-title as a local style tag.
+background-color: #48a9e4;
+background-image: -moz-linear-gradient(top,#0779bf 0%,#48a9e4 100%);
+	      <a href="{{ site.url }}" title="{{ site.title }}" rel="home">
+<!--		<img align="absmiddle" src="{{site.url}}/gfx/sigspatial_logo_small_120.png">
+!-->
+
+
+
+
+<style>
+
+
+</style>
+
+
+
+<body class="home page page-id-6 page-template-default  full-width  custom-font-enabled single-author" onload="initialize();">
+<div id="page" class="hfeed site">
+  <header id="masthead" class="site-header" role="banner">
+    
+    <h1 class="site-header" style="width:100%;">
+      <div class="title-wrapper">
+	<div class="title-text">
+
+	  <img src="/gfx/icaml_logo.png" class="title-image" /><br/>
+	  	  {{ site.title }}
+	</div>
+	<div class="space-filler">&nbsp;</div>
+       </div>
+       
+    </h1>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Zum Inhalt springen">Zum Inhalt springen</a>
+			<div class="menu-menu-1-container">
+
+
+
+{% assign pages = site.pages | sort: 'order' %}
+
+<ul class="nav-menu">
+{% for node in pages %}
+  {% assign node_parts = node.url | split: '/' %}
+  {% assign node_depth = node_parts | size %}
+  {% if node.order %} 
+
+{% if node_depth <= 2 %}
+    <!-- hack: home is active with contains, so if < 2, we need page.url == ... for active !-->
+    
+<li
+   {% if page.url contains node.url and node_depth == 2 %}
+   class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-359"
+   {% endif %}
+
+   {% if page.url == node.url and node_depth < 2 %}
+class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-359"
+					       
+   {% endif %}
+   >
+      <a href="{{ site.url }}{{ node.url }}">
+        {% if node.link %}
+          {{ node.link }} 
+        {% else %}
+          {{ node.title }}
+        {% endif %}
+      </a>
+
+      {% assign node_root = '/' | append: node_parts[1] | append: '/' %}
+      {% assign has_children = false %}
+      {% for subnode in pages %}
+        {% if subnode.url contains node_root and subnode.url != node_root %}
+          {% assign has_children = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if has_children == true %}
+        <ul>
+          {% for subnode in pages %}
+            {% if subnode.url contains node_root and subnode.url != node_root %}
+              {% assign node_parts = subnode.url | split: '/' %}
+              {% assign node_depth = node_parts | size %}
+
+              {% if node_depth == 3 %}
+                <li{% if page.url contains subnode.url %} class="active"{% endif %}>
+                  <a href="{{ subnode.url }}">
+                    {% if subnode.link %}
+                      {{ subnode.link }}
+                    {% else %}
+                      {{ subnode.title }}
+                    {% endif %}
+                  </a>
+
+                  {% assign subnode_root = '/' | append: node_parts[1] | append: '/' | append: node_parts[2] | append: '/' %}
+                  {% assign has_children = false %}
+                  {% for subsubnode in pages %}
+                    {% if subsubnode.url contains subnode_root and subsubnode.url != subnode_root %}
+                      {% assign has_children = true %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if has_children == true %}
+                    <ul>
+                      {% for subsubnode in pages %}
+                        {% if subsubnode.url contains subnode_root and subsubnode.url != subnode_root %}
+                          <li{% if page.url contains subsubnode.url %} class="active"{% endif %}>
+                            <a href="{{ subsubnode.url }}">
+                              {% if subsubnode.link %}
+                                {{ subsubnode.link }}
+                              {% else %}
+                                {{ subsubnode.title }}
+                              {% endif %}
+                            </a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+    {% endif %}
+    {% endif %}
+{% endfor %}
+</ul>
+<!-- MARKER END!-->
+			</div>		
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+						
+	<article id="post-6" class="post-6 page type-page status-publish hentry">
+		<header class="entry-header">
+						<!--<h1 class="entry-title">  Publications </h1> -->
+		</header>
+
+		<div class="entry-content">
+{{ content }}
+		</div><!-- .entry-content -->
+	</article><!-- #post -->
+		</div><!-- #content -->
+	</div><!-- #primary -->
+	
+
+
+
+
+		</div><!-- #main .wrapper -->
+ 	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+		  (c) 2018 ICAML
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='{{site.url}}/js/navigation.js'></script>
+</body>
+</html>
+
+
+
+
+
+
+

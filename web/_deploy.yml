@@ -1,0 +1,11 @@
+url: //icaml.org
+destination: _site
+title: "Interdisciplinary Center for Applied Machine Learning"
+plugins_dir: ['jekyll-scholar', '_plugins']
+gems: [ 'jekyll/scholar']
+scholar:
+  style: _bibstyle
+  repository: pdf
+  bibtex_filters:
+    - latex
+    - mymarkdown
