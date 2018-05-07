@@ -18,7 +18,7 @@ of spatial and geometric machine learning on earth-related, computer vision, and
 on qualifying multiple disciplines in the context of geometric processing and image analysis.
 
 
-The [https://ama-academy.eu](Applied Machine Learning Academy (AMA))
+The [https://ama-academy.com](Applied Machine Learning Academy (AMA))
 is a joint project of the L3S Research Center and the Institut für Fertigungstechnik und Maschinenbau (IFW) concentrating
 on machine learning qualification for industrial applications. 
 
