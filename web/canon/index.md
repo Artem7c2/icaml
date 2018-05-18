@@ -93,7 +93,7 @@ red color are, actually, <b>empty.</b>
 <div class="vertical">&nbsp;</div>
 </td><td>
 <div class="filler">
-<a href="data/physio" ><div class="button empty"> Medical Imagery & Physiological Signals... </div></a>
+<a href="data/med-imagery-physiological" ><div class="button empty"> Medical Imagery & Physiological Signals... </div></a>
 <a href="data/audio" ><div class="button empty"> Audio... </div></a>
 <a href="data/timeseries" ><div class="button empty"> Time Series and Trajectories...  </div></a>
 <a href="data/geo-data" ><div class="button empty"> Geographic Information...  </div></a>
@@ -106,15 +106,15 @@ red color are, actually, <b>empty.</b>
 <div class="filler">
 <a href="algo/featureengineering" ><div class="buttonlarge empty"> Feature Engineering... </div></a>
 <a href="algo/svm" ><div class="buttonsmall empty"> SVM... </div></a>
-<a href="algo/decision-tree" ><div class="buttonsmall empty"> Decision Trees... </div></a>
+<a href="algo/decision-trees" ><div class="buttonsmall empty"> Decision Trees... </div></a>
 <a href="algo/naive-bayes" ><div class="buttonsmall empty"> Naive Bayes... </div></a>
-<a href="algo/ensembling" ><div class="buttonsmall empty"> Ensembles... </div></a>
+<a href="algo/ensembles" ><div class="buttonsmall empty"> Ensembles... </div></a>
 <a href="algo/random-forests" ><div class="buttonsmall empty"> Random Forests... </div></a>
 
 <a href="algo/spatial-data-science" ><div class="button empty"> Spatial Data Science... </div></a>
 <a href="algo/anomaly-detection" ><div class="button empty"> Anomaly Detection... </div></a>
 <a href="algo/auto-encoder" ><div class="button empty"> Auto Encoder... </div></a>
-<a href="algo/multi-variate-regression" ><div class="button empty"> Multivariate Regression... </div></a>
+<a href="algo/multivariate-regression" ><div class="button empty"> Multivariate Regression... </div></a>
 <a href="algo/classification" ><div class="button empty"> Classification... </div></a>
 <a href="algo/convolutional-neural-networks" ><div class="button empty"> Convolutional Neural Networks... </div></a>
 <a href="algo/linear-regression" ><div class="button empty"> Linear Regression... </div></a>
@@ -126,14 +126,14 @@ red color are, actually, <b>empty.</b>
 <div class="vertical">&nbsp;</div>
 </td><td>
 <div class="filler">
-<a href="basics/mapreduce-and-rdd" ><div class="buttonlarge empty"> Scalable Distributed Programming Using MapReduce and Resilient Distributed Datasets (Spark)... </div></a>
+<a href="basics/spark" ><div class="buttonlarge empty"> Scalable Distributed Programming Using MapReduce and Resilient Distributed Datasets (Spark)... </div></a>
 <a href="basics/message-passing-interface" ><div class="button empty"> Message Passing Interface... </div></a>
-<a href="basics/tensor-flow" ><div class="button empty"> Introduction to Tensorflow... </div></a>
+<a href="basics/introduction-tensorflow" ><div class="button empty"> Introduction to Tensorflow... </div></a>
 <a href="basics/apache-big-data-stack" ><div class="button empty"> Apache Big Data Stack... </div></a>
 <a href="basics/r-and-cpp" ><div class="button empty"> R and C++... </div></a>
-<a href="basics/py-and-cpp" ><div class="button empty"> Python and C++... </div></a>
+<a href="basics/python-and-cpp" ><div class="button empty"> Python and C++... </div></a>
 <a href="basics/octave-and-cpp" ><div class="button empty"> Octave and C++... </div></a>
-<a href="basics/introduction-to-cpp" ><div class="buttonlarge empty"> Introduction to C++ </div></a>
+<a href="basics/introduction-cpp" ><div class="buttonlarge empty"> Introduction to C++ </div></a>
 <a href="basics/introduction-r" ><div class="button"> Introduction to R... </div></a>
 <a href="basics/introduction-python" ><div class="button empty"> Introduction to Python... </div></a>
 <a href="basics/introduction-octave" ><div class="button"> Introduction to Octave... </div></a>
