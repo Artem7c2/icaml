@@ -35,6 +35,12 @@ Lead Scientist (Image Analysis)<BR/>
 <br/>
 PhD Candidate<BR/>
 </div>
+<div class="person-box">
+<img src="/gfx/team_leichter.jpg"><br/>
+<a href="http://www.ikg.uni-hannover.de" target="_new">Artem Leichter</A>
+<br/>
+PhD Candidate<BR/>
+</div>
 
 <!--
 <div class="person-box">
