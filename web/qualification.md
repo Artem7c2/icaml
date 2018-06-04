@@ -13,3 +13,11 @@ For now, we are working towards the completion of the first presentations of the
 It is expected that people can select their modules of interest taking only into account that they are getting more and more advanced from
 covering Basics with toy examples towards discussing algorithms in the context of real-world datasets.
 
+
+ML Studio
+------------
+ML Studio is a permanent offer for those who are interested in (practical) ML topics. Here you can get information how to get started with a ML project and to test those in a hands on situation. It is a great opportunity to share your experience and to get in touch with other Machine Learners.
+Feel free to recommend a ML topic you are interested in or to ask for an alternative appointment. 
+<artem.leichter@ikg.uni-hannover.de>
+
+See you every Thursday from 15:00 to 16:00 in [room 616 at Appelstraße 9A, 30167 Hannover](https://info.cafm.uni-hannover.de/room/3408.006.616).
